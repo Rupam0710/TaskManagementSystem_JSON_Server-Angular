@@ -1,0 +1,77 @@
+{
+  "user": [
+    {
+      "id": "admin",
+      "name": "Admin User",
+      "password": "Fifaworldcup2002@",
+      "email": "admin@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isactive": true
+    },
+    {
+      "id": "Zampa20",
+      "name": "Zams",
+      "password": "Fifaworldcup2002@",
+      "email": "z@gmail.com",
+      "gender": "female",
+      "role": "staff",
+      "isactive": false
+    },
+    {
+      "id": "Cristiano7",
+      "name": "Cristiano",
+      "password": "RealMadrid7@",
+      "email": "cr7@hotmail.com",
+      "gender": "male",
+      "role": "staff",
+      "isactive": true
+    },
+    {
+      "id": "Messi10",
+      "name": "Messi",
+      "password": "Barcelona10@",
+      "email": "lm10@hotmail.com",
+      "gender": "male",
+      "role": "",
+      "isactive": false
+    },
+    {
+      "id": "Xavi6",
+      "name": "Xavi",
+      "password": "Spain08@",
+      "email": "xavi@hotmail.com",
+      "gender": "male",
+      "role": "quality",
+      "isactive": false
+    },
+    {
+      "id": "Alexa10",
+      "name": "Alexa",
+      "password": "Alexa100@",
+      "email": "alexa@yahoo.com",
+      "gender": "female",
+      "role": "",
+      "isactive": false
+    },
+    {
+      "id": "Rakesh00",
+      "name": "Rakesh",
+      "password": "Yadav23@",
+      "email": "rk12@gmail.com",
+      "gender": "male",
+      "role": "staff",
+      "isactive": true
+    }
+  ],
+  "role": [
+    {
+      "code": "staff",
+      "name": "Staff"
+    },
+    {
+      "code": "quality",
+      "name": "Quality"
+    }
+  ]
+}
