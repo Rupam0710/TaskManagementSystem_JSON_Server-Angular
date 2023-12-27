@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '../material.module';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
 import { RegistrationComponent } from './components/registration/registration.component';
@@ -14,6 +14,8 @@ import { HomeComponent } from './components/home/home.component';
 import { UserlistingComponent } from './components/userlisting/userlisting.component';
 import { UpdatepopupComponent } from './components/updatepopup/updatepopup.component';
 import { HeaderComponent } from './components/header/header.component';
+import { AppEditEmpComponent } from './components/app-edit-emp/app-edit-emp.component';
+import { EmployeeListComponent } from './components/employee-list/employee-list.component';
 
 
 
@@ -26,6 +28,8 @@ import { HeaderComponent } from './components/header/header.component';
     UserlistingComponent,
     UpdatepopupComponent,
     HeaderComponent,
+    AppEditEmpComponent,
+    EmployeeListComponent,
 
   ],
   imports: [
@@ -36,6 +40,8 @@ import { HeaderComponent } from './components/header/header.component';
     ReactiveFormsModule,
     HttpClientModule,
     ToastrModule.forRoot(),
+    FormsModule,
+    ReactiveFormsModule,
 
   ],
   providers: [],

@@ -1,6 +1,8 @@
 import { Component, DoCheck } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from './services/auth.service';
+import { MatDialog } from '@angular/material/dialog';
+import { AppEditEmpComponent } from './components/app-edit-emp/app-edit-emp.component';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +15,9 @@ export class AppComponent implements DoCheck {
   collapsed = true;
   ismenurequired = false;
   isadminuser = false;
-  constructor(private router: Router, private service: AuthService) { }
+  constructor(private router: Router, private service: AuthService, private dialog: MatDialog) { }
+
+
 
   ngDoCheck(): void {
     let currentUrl = this.router.url;
@@ -30,4 +34,12 @@ export class AppComponent implements DoCheck {
       this.isadminuser = false;
     }
   }
+
+
+
+  openAddEditEmpForm() {
+    this.dialog.open(AppEditEmpComponent);
+
+  }
+
 }
