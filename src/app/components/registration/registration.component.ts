@@ -22,6 +22,7 @@ export class RegistrationComponent {
     gender: this.builder.control('male'),
     role: this.builder.control(''),
     isactive: this.builder.control(false),
+
   })
 
   proceedRegistration() {

@@ -16,7 +16,7 @@
       "email": "z@gmail.com",
       "gender": "female",
       "role": "quality",
-      "isactive": true
+      "isactive": false
     },
     {
       "id": "Cristiano7",
@@ -28,45 +28,67 @@
       "isactive": false
     },
     {
-      "id": "Messi10",
-      "name": "Messi",
-      "password": "Barcelona10@",
-      "email": "lm10@hotmail.com",
-      "gender": "male",
-      "role": "",
-      "isactive": false
-    },
-    {
-      "id": "Xavi6",
-      "name": "Xavi",
-      "password": "Spain08@",
-      "email": "xavi@hotmail.com",
-      "gender": "male",
-      "role": "quality",
-      "isactive": false
-    },
-    {
-      "id": "Alexa10",
-      "name": "Alexa",
-      "password": "Alexa100@",
-      "email": "alexa@yahoo.com",
-      "gender": "female",
-      "role": "",
-      "isactive": false
-    },
-    {
       "id": "Rakesh00",
       "name": "Rakesh",
       "password": "Yadav23@",
       "email": "rk12@gmail.com",
       "gender": "male",
       "role": "staff",
-      "isactive": true
+      "isactive": true,
+      "tasks": [
+        {
+          "firstname": "Luka",
+          "lastname": "Mishra",
+          "email": "lk@gmail.com",
+          "duedate": "2023-12-30T18:30:00.000Z",
+          "gender": "male",
+          "category": "Work",
+          "company": "Barca",
+          "task": "Football",
+          "status": "Complete",
+          "id": "#001"
+        },
+        {
+          "firstname": "Gareth",
+          "lastname": "Bale",
+          "email": "gb11@gmail.com",
+          "duedate": "2023-12-30T18:30:00.000Z",
+          "gender": "female",
+          "category": "Work",
+          "company": "Hala",
+          "task": "Golf",
+          "status": "Not Yet Started",
+          "id": "#002"
+        }
+      ]
     },
     {
-      "id": "Gareth11",
-      "name": "Gareth Bale",
-      "password": "HalaMadrid14",
+      "id": "ABD07",
+      "name": "AB Devilliers",
+      "password": "Fifaworldcup2002@",
+      "email": "ab@gmail.com",
+      "gender": "male",
+      "role": "quality",
+      "isactive": false,
+      "tasks": [
+        {
+          "firstname": "Virat",
+          "lastname": "Kolhi",
+          "email": "vk18@gmail.com",
+          "duedate": "2023-12-29T18:30:00.000Z",
+          "gender": "male",
+          "category": "Work",
+          "company": "India",
+          "task": "Score 100 hundreds",
+          "status": "Complete",
+          "id": "#001"
+        }
+      ]
+    },
+    {
+      "id": "Gareth00",
+      "name": "gareth bale",
+      "password": "Fifaworldcup2002@",
       "email": "gb11@gmail.com",
       "gender": "male",
       "role": "",

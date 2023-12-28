@@ -38,21 +38,36 @@ export class EmployeeListComponent implements OnInit {
 
 
   getEmployeeList() {
-    this.service.getAllEmployee().subscribe({
+    // this.service.getAllEmployee().subscribe({
+    //   next: (res) => {
+
+    //     this.dataSource = new MatTableDataSource(res);
+    //     this.dataSource.sort = this.sort;
+    //     this.dataSource.paginator = this.paginator;
+
+
+    //   },
+    //   error: (err) => {
+
+    //     this.toastr.warning(err)
+    //   }
+    // })
+    this.service.getEmployeeList(sessionStorage.getItem('username')).subscribe({
       next: (res) => {
 
-        this.dataSource = new MatTableDataSource(res);
+        this.dataSource = new MatTableDataSource(res.tasks);
         this.dataSource.sort = this.sort;
         this.dataSource.paginator = this.paginator;
 
 
       },
       error: (err) => {
-        // alert(err);
+
         this.toastr.warning(err)
       }
     })
   }
+
 
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
@@ -64,7 +79,17 @@ export class EmployeeListComponent implements OnInit {
   }
 
   deleteEmp(id: number) {
-    this.service.deleteEmployee(id).subscribe({
+    // this.service.deleteEmployee(id).subscribe({
+    //   next: (res) => {
+    //     this.toastr.success('Employee Deleted Successfully.');
+    //     this.getEmployeeList();
+    //   },
+    //   error: (err) => {
+    //     this.toastr.warning(err)
+    //   }
+    // });
+
+    this.service.deleteTask(sessionStorage.getItem('username'), id).subscribe({
       next: (res) => {
         this.toastr.success('Employee Deleted Successfully.');
         this.getEmployeeList();

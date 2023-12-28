@@ -35,11 +35,22 @@ export class AppEditEmpComponent implements OnInit {
     this.empForm.patchValue(this.data);
   }
 
+  userdata: any;
   onFormSubmit() {
     if (this.empForm.valid) {
 
       if (this.data) {
-        this.service.updateEmployee(this.data.id, this.empForm.value).subscribe({
+        // this.service.updateEmployee(this.data.id, this.empForm.value).subscribe({
+        //   next: (val: any) => {
+        //     this.toastr.success('Employee Details Updated Successfully.');
+        //     this.dialog.close(true);
+        //     this.service.sendData(val);
+        //   },
+        //   error: (err: any) => {
+        //     this.toastr.warning(err)
+        //   }
+        // })
+        this.service.updateTask(sessionStorage.getItem('username'), this.data.id, this.empForm.value).subscribe({
           next: (val: any) => {
             this.toastr.success('Employee Details Updated Successfully.');
             this.dialog.close(true);
@@ -51,7 +62,17 @@ export class AppEditEmpComponent implements OnInit {
         })
       }
       else {
-        this.service.addEmployee(this.empForm.value).subscribe({
+        // this.service.addEmployee(this.empForm.value).subscribe({
+        //   next: (val: any) => {
+        //     this.toastr.success('Employee Details Added Successfully.');
+        //     this.dialog.close(true);
+        //     this.service.sendData(val);
+        //   },
+        //   error: (err: any) => {
+        //     this.toastr.warning(err)
+        //   }
+        // })
+        this.service.addTask(sessionStorage.getItem('username'), this.empForm.value).subscribe({
           next: (val: any) => {
             this.toastr.success('Employee Details Added Successfully.');
             this.dialog.close(true);
@@ -61,6 +82,10 @@ export class AppEditEmpComponent implements OnInit {
             this.toastr.warning(err)
           }
         })
+
+
+
+
       }
 
     }
