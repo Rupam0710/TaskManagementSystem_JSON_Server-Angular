@@ -51,22 +51,10 @@ export class AuthService {
 
 
 
-  //create data in employees
-  // addEmployee(data: any): Observable<any> {
-  //   return this.http.post("http://localhost:3000/employees", data)
-  // }
-
-  // updateEmployee(id: number, data: any): Observable<any> {
-  //   return this.http.put(`http://localhost:3000/employees/${id}`, data);
-  // }
-
-  //fetchdata
-  // getAllEmployee(): Observable<any> {
-  //   return this.http.get("http://localhost:3000/employees")
-  // }
 
 
-  //deletedata
+
+
   deleteEmployee(id: any): Observable<any> {
     return this.http.delete(`http://localhost:3000/employees/${id}`);
   }
@@ -119,7 +107,6 @@ export class AuthService {
 
 
         if (index !== -1) {
-          // user.tasks[index] = updatedTask;
           user.tasks[index].id = taskId;
           user.tasks[index].firstname = updatedTask.firstname;
           user.tasks[index].lastname = updatedTask.lastname;
